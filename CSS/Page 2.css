@@ -1,0 +1,244 @@
+@charset "utf-8";
+body{
+	background : linear-gradient(-45deg, #4a4e69, #22223b, #9a8c98);
+	background-size: 400% 400%;
+	animation: gradient 14s ease infinite;
+	height: 100vh;
+	overflow: hidden;
+}
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 15px;
+    color: #fff;
+}
+.pages{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	text-align: center;
+	padding-bottom: 10px
+}
+.logo{
+    background: #000;
+    width: 100vw;
+    padding: 7px 0;
+    text-align: center;
+}
+a{
+	color: #e63946;
+}
+a:hover{
+	color: antiquewhite;
+}
+.top{
+	text-align: center;
+}
+.top h1{
+    border: double red 4px;
+    width: 41%;
+    margin-left: 30%;
+    font-size: 300%;
+    font-style: normal;
+    font-weight: 400;
+    font-family: artifika;
+}
+.top h2{
+    background: red;
+    font-family: artifika;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 125%;
+    margin: 0 5px;
+    margin-top: -1%;
+}
+.top h3{
+	color: gray;
+	position: fixed;
+	border: solid gray 3px;
+	width: 10%;
+	overflow: auto;
+	font-size: 100%;
+	margin-top: -28mm;
+}
+.content h1{
+    font-size: 150%;
+    font-family: alice;
+    font-style: normal;
+    font-weight: 500;
+	color: #e76f51;
+	position: relative;
+	top: 25px;
+	left: 15px;
+}
+.content ul{
+	list-style-type: square;
+}
+.content table{
+	text-align: center;
+	padding: 5px;
+	margin: 20mm;
+	color: black;
+}
+.content th{
+	color: #ca6702;
+	font-family: artifika;
+}
+.content td{
+	color: orange;
+	font-family: alice;
+}
+.content img{
+	position: relative;
+	bottom: 11cm;
+	left: 40cm;
+
+}
+
+
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	html,body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	body{
+		font-size: 7px;
+}
+	.top h1{
+		width: 60%;
+	}
+	.top h3{
+		width: 20%;
+		margin-top: -21mm;
+		margin-left: 14px;
+	}
+	.content h1{
+		position: relative;
+		margin-right: 15%;
+	}
+	.content table{
+		width: 200px;
+		height: 75px;
+		margin-left: 10%;
+		
+	}
+	.content img{
+		padding: 0;
+		position: relative;
+		top: -12mm;
+		left: 4.3cm;
+		width: 50px;
+		height: 50px;	
+	}
+}
+
+/* iPadPro */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	*{
+		font-size: 19px;
+	}
+	html,body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	.top h1{
+		width: 150mm;
+		margin-left: 76mm;
+	}
+	.top h3{
+		width: 55mm;
+		margin-top: -57mm;
+	}
+	.content h1{
+		margin-right: 60px;
+		
+	}
+	.content table{
+		width: 985px;
+		margin-left: 5mm;
+	}
+	.content img{
+		position: relative;
+		top: -15mm;
+		left: 11cm;
+	}
+}
+
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1280px) and (max-width : 1281px) {
+	html,body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	body{
+		font-size: 10.5px;
+}
+	.top h3{
+		margin-top: -6%;
+	}
+	.content table{
+		width: 1000px;
+		height: 200px;
+		margin-left: 40mm;
+	}
+	.content img{
+		margin-left: -74%;
+		margin-top: 28.5%;
+		width: 175px;
+		height: 175px;
+	}
+}
+@media only screen and (min-width : 1440px) and (max-width : 1450px) {
+		html,body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	body{
+		font-size: 10.5px;
+}
+	.top h3{
+		margin-top: -5%;
+	}
+	.content table{
+		width: 1000px;
+		height: 270px;
+		margin-left: 17mm;
+	}
+	.content img{
+		margin-left: -23%;
+		margin-top: 8.7%;
+		width: 175px;
+		height: 175px;
+	}
+}

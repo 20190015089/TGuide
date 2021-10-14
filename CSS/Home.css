@@ -1,0 +1,223 @@
+@charset "utf-8";
+body{
+	background : linear-gradient(-45deg, #4a4e69, #22223b, #9a8c98);
+	background-size: 400% 400%;
+	animation: gradient 14s ease infinite;
+	height: 100vh;
+	overflow: hidden;
+}
+@keyframes gradient{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+.top {
+	text-align: center;
+	
+}
+.top h1{
+    border: double red 4px;
+	width: 37%;
+	margin-left: 35%;
+	font-size: 300%;
+    font-style: normal;
+    font-weight: 400;
+	font-family: artifika;
+}
+.top h2{
+	background: red;
+	font-family: artifika;
+	font-style: normal;
+	font-weight: 250;
+	font-size: 125%;
+	margin: 0 5px;
+	margin-top: -1%;
+}
+.top h3{
+    text-align: center;
+    border: dashed yellow 2px;
+    width: 27%;
+    font-size: 220%;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
+	color: darkgoldenrod;
+	margin-left: 6px;
+	margin-top: 60px;
+}
+.top ul{
+    color: #f8961e;
+    text-align: left;
+    list-style: square;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 200%;
+	margin-top: 32px;
+	margin-left: 20px;
+}
+.top h4{
+    text-align: center;
+    border: dashed yellow 2px;
+    width: 26%;
+    font-size: 220%;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
+	color: darkgoldenrod;
+	margin-left: 6px;
+}
+.top h5{
+	font-size: x-large;
+	margin-left: -375mm;
+	margin-top: 50px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; 
+	color: #f8961e;
+	
+}
+.top h6{
+	color: gray;
+	position: fixed;
+	border: solid gray 3px;
+	width: 10%;
+	overflow: auto;
+	font-size: 100%;
+	margin-top: -3.75px;
+	
+}
+.top img{
+	margin-top: -700px;
+	margin-left: 1200px;
+	margin-bottom: 6%;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 15px;
+    color: #fff;
+}
+.pages{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+	text-align: center;
+	padding-bottom: 10px
+}
+.logo{
+    background: #000;
+    width: 100vw;
+    padding: 7px 0;
+    text-align: center;
+}
+a{
+	color: #e63946;
+}
+a:hover{
+	color: antiquewhite;
+}
+
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	html,body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	body{
+		font-size: 7px;
+	}
+	.top h4{
+		position: relative;
+		top: 45px;
+		
+	}
+	.top h5{
+		margin: 0;
+		margin: 20px;
+		font-size: 15px;
+		position: relative;
+		top: 70px;
+		right: 80px;
+	}
+	.top img{
+		width: 100px;
+		height: 90px;
+		margin: 0;
+		position: relative;
+		bottom: 150px;
+		left: 70px;
+	}
+	.top h6{
+		width: 28%;
+		font-size: 10px;
+		margin-top: 20px;
+
+	}
+}
+
+/* iPadPro */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	.top{
+		font-size: 15px;
+	}
+	.top h6{
+		font-size: 20px;
+		width: 23%;
+	}
+	.top h5{
+		font-size: 30px;
+		margin: 15mm;
+		margin-left: -150mm;
+		margin-bottom: 30mm;
+	}
+	.top img{
+		margin: 0 0 0 0;
+		width: 300px;
+		height: 275px;
+		margin-left: 100mm;
+		margin-top: -100mm;
+		position: relative;
+		bottom: 200px;
+	}
+	html,body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+}
+
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1280px) and (max-width : 1900px) {
+	html,body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+	body{
+		font-size: 10.5px;
+	}
+	.top h5{
+		margin-right: -500px;
+	}
+	.top img{
+		width: 250px;
+		height: 230px;
+		margin: 0px;
+		position: relative;
+		bottom: 80mm;
+		left: 100mm;
+	}
+}
