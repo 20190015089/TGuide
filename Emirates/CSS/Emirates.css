@@ -1,0 +1,117 @@
+@charset "utf-8";
+body{
+	background : linear-gradient(95deg, #f72585, #b5179e, #7209b7, #560bad, #480ca8, #3a0ca3, #3f37c9, #4361ee, #4895ef, #4cc9f0);
+	background-size: 400% 400%;
+	animation: gradient 14s ease infinite;
+	height: 100vh;
+	overflow: hidden;
+	
+} .main {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+h1 {
+	align-content: center;
+	text-align: center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+} .border {
+	background: White;
+	min-height: 70vh;
+	width: auto;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255 ,255, 0.3));
+	border-radius: 2rem;
+	display: flex;
+}
+.menu-4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+.menu-4 * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-4 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+.menu-4 a {
+  padding: 0.3em 0;
+  color: #212121;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+.menu-4 a:before,
+.menu-4 a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu-4 a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: White;
+}
+.menu-4 a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: #212121;
+  white-space: nowrap;
+}
+.menu-4 li:hover a,
+.menu-4 .current a {
+  transform: translateY(100%);
+} .footer {
+	position: relative;
+	bottom : -1%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} ::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+
+::selection {
+  color: white;
+  background: pink;
+}.footer {
+	position: absolute;
+    bottom: 0.009rem;
+    left: 0;
+    right: 0;
+} .only {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0vh 15vh;
+} .only audio {
+	width: 40vh;
+	height: 5vh;
+} .only video {
+	width: 70vh;
+	border-radius: 2rem;
+} .only a {
+	font-style: italic;
+	text-decoration: underline;
+	color: black;
+}
+
